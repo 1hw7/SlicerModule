@@ -258,6 +258,6 @@ class HannahWilkinsonTest(ScriptedLoadableModuleTest):
     slicer.mrmlScene.AddNode(node)
     nodeToTranslate = vtk.vtkTransform()
     nodeToTranslate.PreMultiply() 
-    nodeToTranslate.Translate(0, 100, 0)
+    nodeToTranslate.Translate(0,0, 0)
     nodeToTranslate.Update()
     node.SetAndObserveTransformToParent(nodeToTranslate)
